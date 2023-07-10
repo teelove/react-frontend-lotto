@@ -3,8 +3,8 @@ export interface IReport {
   timeArrest: string;
   locationArrest: string;
   suspectorArrest: string;
-  evidenceArrest: [string,number,number];
-  evidence2Arrest: Array<string>;
+  evidenceArrest: { i: string; n: number; p: number };
+  evidence2Arrest: string;
   dailyVerseArrest: Array<string>;
   dailyBankNumberArrest: Array<string>;
 }
