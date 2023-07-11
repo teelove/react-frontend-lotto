@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { login } from "./Login";
+import { ILogin } from "./Interface/ILogin";
 
 function Copyright(props: any) {
   return (
@@ -31,23 +32,19 @@ function Copyright(props: any) {
     </Typography>
   );
 }
-
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
 export default function PageSignIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     const dataInput = new FormData(event.currentTarget);
-
-    const jsonData = {
+    const jsonData: ILogin = {
       Email: dataInput.get("email"),
       Password: dataInput.get("password"),
     };
     
     login(jsonData);
-
   };
 
   return (

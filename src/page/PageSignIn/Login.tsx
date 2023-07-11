@@ -1,11 +1,12 @@
 import axios, { AxiosResponse } from "axios";
+import { ILogin } from "./Interface/ILogin";
 
 interface LoginResponseData {
   status: string;
   token: string;
 }
 
-export async function login(data: any) {
+export async function login(data: ILogin) {
   
     /*const jsonData = {
     Your login data object
