@@ -5,6 +5,7 @@ import "./App.css";
 import { IReport } from "./Page/PageLotto/Interface/IReport";
 
 function App() {
+
   const [count, setCount] = useState(0);
 
   const test: IReport = {
@@ -13,13 +14,12 @@ function App() {
     locationArrest: "testlocation",
     suspectorArrest:"Weerapon Tipratmongkhon",
     evidenceArrest: {i:"16 ก.ค.66",n:10,p:50},
-    evidence2Arrest: {i:"16 ก.ค.66",n:10,p:50},
+    evidenceDataArrest: "ชุดที่ 10 เลขสลาก 535102 จำนวน 1 ฉบับ",
     dailyVerseArrest:"ข้อที่ 5 เวลา10.23 น. ลงวันที่ 26 มิ.ย.66",
     dailyBankNumberArrest:["7ค7910884","7ค7910885"]
   };
   
   //console.log(test.dailyBankNumberArrest)
-
   //var fruits: Array<string> = ['Apple', 'Orange', 'Banana'];
   //console.log(fruits);
 

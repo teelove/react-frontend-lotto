@@ -4,7 +4,7 @@ export interface IReport {
   locationArrest: string;
   suspectorArrest: string;
   evidenceArrest: { i: string; n: number; p: number };
-  evidence2Arrest: { i: string; n: number; p: number };
+  evidenceDataArrest: string;
   dailyVerseArrest: string;
   dailyBankNumberArrest: Array<string>;
 }

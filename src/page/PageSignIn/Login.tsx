@@ -32,7 +32,7 @@ export async function login(data: ILogin) {
     if (response.data.status === "ok") {
       alert("login success");
       //localStorage.setItem("token", response.data.token);
-      //window.location.href = "/dashboard";
+      window.location.href = "/dashboard";
     } else {
       alert("login fail");
       //window.location.href = "/";

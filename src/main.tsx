@@ -4,8 +4,9 @@ import App from './App.tsx'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignIn from './Page/PageSignIn/PageSignIn.tsx';
-import PageLotto from './Page/PageLotto/PageLotto.tsx';
-
+import Dashboard from './Page/PageLotto/dashboard/Dashboard.tsx';
+import ArrestForm from './Page/PageLotto/dashboard/ArrestForm.tsx';
+import PoliceDailyLog from './Page/PageLotto/dashboard/PoliceDailyLog.tsx';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -13,9 +14,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/signin" element={<SignIn />} />
-            <Route path="/pagelotto" element={<PageLotto />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/arrestforom" element={<ArrestForm />} />
+            <Route path="/policedailylog" element={<PoliceDailyLog />} />
           </Routes>
-        </BrowserRouter>
-    
+        </BrowserRouter>            
   </React.StrictMode>,
 )
+
