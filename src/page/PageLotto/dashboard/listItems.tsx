@@ -8,6 +8,8 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PeopleIcon from '@mui/icons-material/People';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
+import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -19,17 +21,17 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItemButton>
-    <ListItemButton key={"arrestforom"} component={Link} to={"/arrestforom"}>
+    <ListItemButton key={"Policedailylog"} component={Link} to={"/policedailylog"}>    
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <BorderColorIcon />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
+      <ListItemText primary="Police Daily Log" />
     </ListItemButton>
-    <ListItemButton key={"policedailylog"} component={Link} to={"/policedailylog"}>
+    <ListItemButton key={"Arrestforom"} component={Link} to={"/arrestforom"}>
       <ListItemIcon>
-        <PeopleIcon />
+        <LocalPoliceIcon />
       </ListItemIcon>
-      <ListItemText primary="Customers" />
+      <ListItemText primary="Arrest Form" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
